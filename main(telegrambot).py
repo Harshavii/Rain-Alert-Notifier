@@ -1,9 +1,10 @@
 import requests
 #below key is accessed after signing up openweather website
-key ="b66e184590bd9692daf2b2b9de43d478"
+key ="API_KEY_OF_OPENWEATHER"
 
 will_rain = False
 
+# TESTING ACCORDING TO CURRENT TIME
 # As currently there is thunderstorm in São Paulo, therefore this location is used in order to test
 parameters = {
     "lat": -23.550520,
@@ -19,8 +20,8 @@ id = weather_data["hourly"][:12]
 
 # Telegram bot
 def telegram_bot_sendtext(bot_message):
-    bot_token = '5896718665:AAGpVSCt4LAxTAerWIQd5NAETULBM5Zg7AY'
-    bot_chatID = '1394025223'
+    bot_token = 'YOUR_BOT_TOKEN'
+    bot_chatID = 'YOUR_BOT_ID'
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
     response = requests.get(send_text)
 
