@@ -1,4 +1,4 @@
-# day-35_Rain-Alert-Notifier
+# Rain-Alert-Notifier
 
 So in this project, I have used requests, API modules in order to track weather condition.
 OpenWeather website is used in this project to get the required weather details.
